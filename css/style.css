@@ -8,3 +8,6 @@
 @import url("./depoimento.css");
 @import url("./seguro.css");
 @import url("./footer.css");
+
+/* termos */
+@import url("./termos/termos.css");
