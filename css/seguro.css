@@ -1,0 +1,342 @@
+.seguro-bg {
+  background-color: var(--c11);
+}
+.seguro-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 22px;
+}
+.seguro-content h2 {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.12;
+  margin-bottom: 105px;
+  color: var(--w);
+  justify-self: start;
+}
+.seguro-planos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.plano-prata {
+  display: flex;
+  background-color: var(--c12);
+  color: var(--w);
+  max-width: 560px;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 4px;
+  width: 100%;
+}
+.plano-prata h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--c6);
+  margin-bottom: 40px;
+}
+.plano-prata ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.plano-prata ul li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -20px;
+  display: block;
+  background-image: url("../arquivos-cliente/icones/lista.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plano-prata ul li:last-child {
+  margin-bottom: 32px;
+}
+.plano-prata a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  padding: 16px 32px;
+  background-color: var(--c10);
+  /* identical to box height, or 133% */
+  border-radius: 4px;
+  cursor: pointer;
+}
+.plano-prata a:hover {
+  background-color: var(--c9);
+}
+.plano-prata p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+}
+.plano-prata span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--c6);
+}
+/*  */
+.plano-ouro {
+  display: flex;
+  background-color: var(--c12);
+  color: var(--w);
+  max-width: 560px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 4px;
+}
+.plano-ouro h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--p1);
+  margin-bottom: 40px;
+}
+.plano-ouro ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.plano-ouro ul li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -20px;
+  display: block;
+  background-image: url("../arquivos-cliente/icones/lista.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plano-ouro ul li:last-child {
+  margin-bottom: 32px;
+}
+.plano-ouro a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  padding: 16px 32px;
+  background-color: var(--p1);
+  /* identical to box height, or 133% */
+  border-radius: 4px;
+  cursor: pointer;
+}
+.plano-ouro a:hover {
+  background-color: var(--p2);
+}
+.plano-ouro p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+}
+.plano-ouro span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--c6);
+}
+@media (max-width: 1000px) {
+  .seguro-content h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.12;
+    margin-bottom: 105px;
+    color: var(--w);
+  }
+  .seguro-planos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-width: 630px) {
+  .seguro-planos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  .seguro-content {
+    padding: 32px;
+  }
+  .seguro-planos h2 {
+    margin: 20px;
+  }
+  .plano-prata {
+    display: flex;
+    background-color: var(--c12);
+    color: var(--w);
+    max-width: 460px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .plano-prata h3 {
+    font-size: 26px;
+    /* identical to box height, or 133% */
+    color: var(--c6);
+    margin-bottom: 40px;
+  }
+  .plano-prata ul li {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .plano-prata ul li:last-child {
+    margin-bottom: 22px;
+  }
+  .plano-prata a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 22px;
+    background-color: var(--c10);
+    /* identical to box height, or 133% */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .plano-prata a:hover {
+    background-color: var(--c9);
+  }
+  .plano-prata p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+  }
+  .plano-prata span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    color: var(--c6);
+  }
+  /*  */
+  .seguro-planos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  .plano-ouro {
+    display: flex;
+    color: var(--w);
+    max-width: 460px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .plano-ouro h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+    margin-bottom: 40px;
+  }
+  .plano-ouro ul li {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .plano-ouro ul li:last-child {
+    margin-bottom: 22px;
+  }
+  .plano-ouro a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.33;
+    padding: 12px 22px;
+    /* identical to box height, or 133% */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .plano-ouro p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+  }
+  .plano-ouro span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+  }
+}

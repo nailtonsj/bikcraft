@@ -1,0 +1,110 @@
+.bicicletas-bg {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.bicicletas {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 22px;
+}
+.bicicletas h1 {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.12;
+  margin-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 22px;
+}
+.card {
+  flex: 1 1 320px;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(101%);
+}
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+.cards a:hover {
+  transform: scale(105%);
+}
+
+.card img {
+  border-radius: 5px;
+}
+.card h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.card h3::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+}
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .bicicletas h1 {
+    font-size: 3rem;
+  }
+  .card h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 426px) {
+  .bicicletas h1 {
+    font-size: 2.4rem;
+  }
+  .bicicletas-bg {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .bicicletas {
+    padding: 22px;
+  }
+  .bicicletas h1 {
+    margin-bottom: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .cards {
+    gap: 20px;
+  }
+}

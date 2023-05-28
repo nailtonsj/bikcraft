@@ -1,0 +1,41 @@
+[data-tempo="1000"] {
+  transition: 0.6s;
+}
+[data-tempo="2000"] {
+  transition: 0.8s;
+}
+[data-tempo="3000"] {
+  transition: 1s;
+}
+[data-anime="left"] {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+[data-anime="left"].ativo {
+  opacity: 1;
+  transform: translateX(0px);
+}
+[data-anime="right"] {
+  opacity: 0;
+  transform: translateX(10px);
+}
+[data-anime="right"].ativo {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+[data-anime="top"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+[data-anime="top"].ativo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+[data-scroll] {
+  opacity: 0;
+}
+[data-scroll].ativo {
+  opacity: 1;
+  transition: 0.5s;
+}

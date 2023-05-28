@@ -1,0 +1,42 @@
+.header-bg {
+  background-color: var(--c12);
+  color: var(--w);
+}
+.header {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.header img {
+  padding-bottom: 8px;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu a {
+  color: inherit;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+}
+.header-menu a::after {
+  background-color: var(--w);
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  content: "";
+  display: block;
+  transition: all ease 0.5s;
+}
+.header-menu a:hover::after {
+  width: 100%;
+}
