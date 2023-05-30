@@ -1,0 +1,214 @@
+.bicicletas-introducao-bg {
+  background-color: var(--c12);
+  padding: 60px 0;
+}
+.bicicletas-introducao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px;
+}
+.bicicletas-introducao h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  text-transform: uppercase;
+  /* c5 */
+  color: var(--c1);
+}
+.bicicletas-introducao h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.12;
+  /* identical to box height, or 112% */
+  /* w */
+  color: var(--w);
+}
+.bicicletas-main-bg {
+  background-color: var(--w);
+  padding: 120px 0;
+}
+.bicicletas-main {
+  display: grid;
+  gap: 60px;
+}
+.bicicletas-main-item-imagem {
+  max-height: 340px;
+  height: 100%;
+  width: 100%;
+}
+.bicicletas-main-item-imagem img {
+  object-fit: cover;
+  object-position: left;
+  max-height: 340px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+.bicicletas-main-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  max-width: 1162px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--w);
+}
+.bicicletas-main-item:nth-child(2) {
+  background: linear-gradient(to right, #fff 30%, #000 30%);
+}
+.bicicletas-main-item:nth-child(2) h3 {
+  color: var(--w);
+}
+.bicicletas-main-item:nth-child(2) p {
+  color: var(--c5);
+}
+.bicicletas-main-item:nth-child(2) ul li {
+  color: var(--c5);
+}
+
+.bicicletas-bg-dark {
+  background-color: #595959;
+}
+.bicicletas-main-item h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--c11);
+  /* identical to box height, or 111% */
+  margin-bottom: 20px;
+}
+.bicicletas-main-item h3::before {
+  content: "";
+  display: block;
+  background-color: var(--p1);
+  top: -8px;
+  left: 0;
+  width: 12px;
+  height: 8px;
+  margin-bottom: 8px;
+}
+.bicicletas-main-item p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--c8);
+  /* or 133% */
+  margin-bottom: 32px;
+}
+.bicicletas-main-item-content ul {
+  display: grid;
+  gap: 16px;
+}
+.bicicletas-main-item-content ul li {
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--c8);
+  /* c8 */
+  color: #595959;
+}
+
+.bicicletas-main-item-content-dividir {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+.bicicletas-main-item-content a {
+  display: grid;
+  align-self: flex-end;
+  justify-self: end;
+}
+@media (max-width: 850px) {
+  .bicicletas-introducao h2 {
+    font-size: 1.2rem;
+  }
+  .bicicletas-introducao h1 {
+    font-size: 3rem;
+    line-height: 1.12;
+  }
+  .bicicletas-introducao-bg {
+    padding: 30px 0;
+  }
+  .bicicletas-main-bg {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 450px) {
+  .bicicletas-introducao h2 {
+    font-size: 1rem;
+  }
+  .bicicletas-introducao h1 {
+    font-size: 2.5rem;
+  }
+  .bicicletas-introducao-bg {
+    padding: 30px 0;
+  }
+  .bicicletas-main-bg {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 800px) {
+  .bicicletas-main-item {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-main-item:nth-child(2) {
+    background: var(--w);
+  }
+  .bicicletas-main-item:nth-child(2) h3 {
+    color: var(--c12);
+  }
+  .bicicletas-main-item:nth-child(2) p {
+    color: var(--c8);
+  }
+  .bicicletas-main-item:nth-child(2) ul li {
+    color: var(--c8);
+  }
+}
+@media (max-width: 480px) {
+  .bicicletas-main-item-content-dividir {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-main-item-content-dividir ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicicletas-main-item-content-dividir ul li {
+    font-size: 0.9rem;
+    gap: 5px;
+    align-items: center;
+  }
+  .bicicletas-main-item-content-dividir a {
+    align-self: flex-start;
+    justify-self: stretch;
+    text-align: center;
+  }
+  .bicicletas-main {
+    gap: 0px;
+    padding: 30px 0;
+  }
+  .bicicletas-main-item {
+    padding: 30px 40px;
+  }
+  .bicicletas-main-item h3 {
+    font-size: 24px;
+  }
+  .bicicletas-main-item p {
+    font-size: 18px;
+  }
+}
